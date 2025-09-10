@@ -23,6 +23,7 @@ Exemple : HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET); // Met la broche P
 ### 4. Dans quel fichier les ports d’entrée/sortie sont-ils définis ?
 Les définitions des broches et des ports GPIO se trouvent principalement dans le fichier gpio.h généré automatiquement par STM32CubeMX. On retrouve également certaines définitions dans main.h. Les fichiers de la bibliothèque HAL, comme stm32g4xx_hal_gpio.h, contiennent quant à eux les prototypes de fonctions et définitions génériques liées aux GPIO.
 ### 5. Écrire un programme permettant de faire clignoter la LED.
+```
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -100,6 +101,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1) {}
 }
+```
 
 ### 6. Modifier le programme pour que la LED s’allume lorsque le bouton USER est appuyé.
 /* USER CODE BEGIN Header */
