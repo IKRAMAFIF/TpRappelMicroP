@@ -104,6 +104,7 @@ void Error_Handler(void)
 ```
 
 ### 6. Modifier le programme pour que la LED s’allume lorsque le bouton USER est appuyé.
+```
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -243,3 +244,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+```
